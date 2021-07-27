@@ -30,7 +30,7 @@ export function Home() {
               type="text"
               placeholder="Digite o código da sala"
             />
-            
+            {/* TODO Add Login Icon to Join Room Button  */}
             <Button type="submit">Entrar na sala</Button>
           </form>
         </div>
