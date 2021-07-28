@@ -35,6 +35,7 @@ export function Home() {
     const roomRef = await database.ref(`rooms/${roomCode}`).get();
 
     if(!roomRef.exists()) {
+      // TODO Update Alert to a Modal
       alert('Room does not exist.');
       return;
     };
