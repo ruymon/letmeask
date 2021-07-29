@@ -104,9 +104,8 @@ export function Room() {
 
       <main>
         <div className="room-title">
-          {/* TODO - Add Room Name */}
           <h1>Sala {title}</h1>
-          { questions.length > 0 && <span>{questions.length} perguntas</span>}
+          { questions.length > 0 && <span>{questions.length} pergunta{questions.length === 1 ? ('') : ('s')}</span>}
         </div>
 
         <form onSubmit={handleSendQuestion}>
@@ -129,6 +128,8 @@ export function Room() {
             <Button type="submit" disabled={!user}>Enviar pergunta</Button>
           </div>
         </form>
+
+        {JSON.stringify(questions)}
       </main>
     </div>
   );
