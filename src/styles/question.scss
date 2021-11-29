@@ -46,7 +46,7 @@
         color: #737380;
         gap: 8px;
 
-        transition: filter .2s ease-in-out;
+        transition: all .2s ease-in-out;
 
         &.liked {
           color: #835afd;
@@ -58,6 +58,10 @@
 
         &:hover {
           filter: brightness(0.7);
+        }
+
+        &:active {
+          transform: scale(.9);
         }
       }
     }
